@@ -262,4 +262,8 @@ footer .insta:hover{
     #instafeed img:hover{
         opacity: 0.8;
     }
+    
+    .scrollTop{
+        display: none;
+    }
 }
