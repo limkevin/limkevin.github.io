@@ -19,6 +19,14 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+
+body, img { 
+    transition:all .2s linear; 
+    -o-transition:all .2s linear; 
+    -moz-transition:all .2s linear; 
+    -webkit-transition:all .2s linear;
+}
+
 #container{
     margin-left: auto;
     margin-right: auto;
@@ -122,6 +130,7 @@ time, mark, audio, video {
     display:block;
     margin: 0 auto;
     margin-top: 10%;
+    max-width: 66%;
 }
 
 #instafeed img:hover{
@@ -161,4 +170,82 @@ footer .insta{
 
 footer .insta:hover{
     background-image: url('../images/instagramHover.png');
+}
+
+@media only screen and (max-width : 991px) {
+    #instafeed{
+        width: 640px;
+        margin: 0 auto;
+    }
+
+    #instafeed p{
+        font-family: helvetica;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+
+    #instafeed img{
+        display:block;
+        margin: 0 auto;
+        margin-top: 10%;
+        max-width: 66%;
+    }
+
+    #instafeed img:hover{
+        opacity: 0.8;
+    }
+}
+
+@media only screen and (max-width : 658px) {
+    #instafeed{
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    #instafeed p{
+        font-family: helvetica;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+
+    #instafeed img{
+        display:block;
+        margin: 0 auto;
+        margin-top: 10%;
+        max-width: 45%;
+    }
+
+    #instafeed img:hover{
+        opacity: 0.8;
+    }
+}
+
+@media only screen and (max-width : 500px) {
+    #instafeed{
+        width: 450px;
+        margin: 0 auto;
+    }
+
+    #instafeed p{
+        font-family: helvetica;
+        font-size: 13px;
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+
+    #instafeed img{
+        display:block;
+        margin: 0 auto;
+        margin-top: 10%;
+        max-width: 45%;
+    }
+
+    #instafeed img:hover{
+        opacity: 0.8;
+    }
 }
