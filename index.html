@@ -2,6 +2,12 @@
 <html>
     <head>
         <link rel='stylesheet' href="css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="css/scrollToTop.css">
+        <link rel="stylesheet" href="css/easing.css">
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+        <script src="js/jquery-scrollToTop.js"></script> 
+        <script src="js/jquery.js"></script> 
         <script type="text/javascript" src="js/instafeed.min.js"></script>
         <script type="text/javascript">
             var userFeed = new Instafeed({
@@ -9,7 +15,8 @@
                 userId: '43846828',
                 accessToken: '43846828.fe3e8d4.8bf67bf4797c498186add348e3c1440b',
                 resolution: 'standard_resolution',
-                template: '<a href="{{link}}"><img src="{{image}}" /></a><p>{{caption}}</p>'
+                sortBy: 'most-recent',
+                template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a><p>{{caption}}</p>'
             });
             userFeed.run();
         </script>
@@ -23,10 +30,22 @@
                 <p class="intro">
                     It's me _kevinlim, here are my most recent shots, enjoy!
                 </p>
-                
-                <img class="profilepic" src='images/profilepic.png'>                
+                <p class="follow">
+                    You can also follow me on Instagram :
+                </p>
+                <a href="https://www.instagram.com/_kevinlim/" class="insta" target="_blank"></a>
+                <img class="profilepic" src='images/profilepic.png' data-effect="mfp-zoom-in">
             </div>
             <div id="instafeed"></div>
         </div>
+        <footer>
+            <p class="top">
+                Follow me on Instagram :
+            </p>
+            <a href="https://www.instagram.com/_kevinlim/" class="insta" target="_blank"></a>
+            <p class="bottom">
+                Copyright 2016 _kevinlim. All rights reserved.
+            </p>
+        </footer>
     </body>
 </html>
