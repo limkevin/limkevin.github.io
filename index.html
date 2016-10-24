@@ -1,36 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!--
-        <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
-	<script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script> 
-		
-	<link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' /> 
-	<script type='text/javascript' src='unitegallery/themes/tiles/ug-theme-tiles.js'></script> 
-	<link rel='stylesheet' href='unitegallery/themes/default/ug-theme-default.css' type='text/css' /> 
-        
-        
-        
-        <script type="text/javascript"> 
-			
-            jQuery(document).ready(function(){ 
-                jQuery("#gallery").unitegallery({
-                    tile_enable_textpanel:true,
-                    tile_textpanel_title_text_align: "center",
-                    tiles_type:"justified"
-                });
-            });
-		
-	</script>-->
         <link rel='stylesheet' href="css/style.css" type="text/css"/>
         <script type="text/javascript" src="js/instafeed.min.js"></script>
         <script type="text/javascript">
-            var feed = new Instafeed({
-                get: 'tagged',
-                tagName: 'awesome',
-                clientId: 'fe3e8d4310624a6f9c0cfb98f0cb6edd'
+            var userFeed = new Instafeed({
+                get: 'user',
+                userId: '43846828',
+                accessToken: '43846828.fe3e8d4.8bf67bf4797c498186add348e3c1440b',
+                resolution: 'standard_resolution',
+                template: '<a href="{{link}}"><img src="{{image}}" /></a><p>{{caption}}</p>'
             });
-            feed.run();
+            userFeed.run();
         </script>
     </head>
     <body>
@@ -40,17 +21,12 @@
                     Hello!
                 </p>
                 <p class="intro">
-                    It's me _kevinlim, here is the entirety of my work, enjoy!
+                    It's me _kevinlim, here are my most recent shots, enjoy!
                 </p>
                 
                 <img class="profilepic" src='images/profilepic.png'>                
             </div>
-            <div id="instafeed">
-                
-            </div>
-            <!-- LightWidget WIDGET 
-            <script src="//lightwidget.com/widgets/lightwidget.js"></script>
-            <iframe src="//lightwidget.com/widgets/3769dde039cf549fba1553371541d813.html" id="lightwidget_3769dde039" name="lightwidget_3769dde039"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>-->
+            <div id="instafeed"></div>
         </div>
     </body>
 </html>

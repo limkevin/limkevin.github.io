@@ -56,6 +56,21 @@ time, mark, audio, video {
     margin-bottom: 5%;
 }
 
-#gallery{
-    position: relative;
+#instafeed{
+    width: 960px;
+    margin: 0 auto;
+}
+
+#instafeed p{
+    font-family: helvetica;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+#instafeed img{
+    display:block;
+    margin: 0 auto;
+    margin-top: 10%;
 }
