@@ -137,6 +137,20 @@ body, img {
     opacity: 0.8;
 }
 
+.scrollTop{
+    display: block;
+    position: fixed;
+    height: 26px;
+    width: 26px;
+    background-image: url('../images/cycle.png');
+    margin-top: 46%;
+    margin-left: 97%;
+}
+
+.scrollTop:hover{
+    background-image: url('../images/cycle-hover.png');
+}
+
 footer{
     height: 20%;
     background-color:#00091a;
