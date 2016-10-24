@@ -143,8 +143,8 @@ body, img {
     height: 26px;
     width: 26px;
     background-image: url('../images/cycle.png');
-    margin-top: 46%;
     margin-left: 97%;
+    bottom: 3%;
 }
 
 .scrollTop:hover{
