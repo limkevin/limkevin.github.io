@@ -126,11 +126,14 @@ body, img {
     margin-bottom: 5%;
 }
 
-#instafeed img{
+.wrapImg{
     display:block;
     margin: 0 auto;
     margin-top: 10%;
     /*max-width: 66%;*/
+    height:auto;
+    text-align:center;
+    position:relative;
 }
 
 #instafeed img:hover{
@@ -139,7 +142,14 @@ body, img {
 
 .likes{
 	color: white;
-	
+	position: absolute;
+ 	margin: auto;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    color:#fff;
+    height:100px;
 }
 
 .scrollTop{
